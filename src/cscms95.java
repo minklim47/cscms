@@ -30,17 +30,13 @@ public class cscms95 {
         System.out.println("Average of each row:");
         for (int i = 0; i < row; i++){
          //   System.out.print(rowSum[i]);
-           System.out.print(String.format("%.2f",rowSum[i]));
-            if (i != row -1)
-                System.out.print(" ");
+           System.out.printf("%.2f ",rowSum[i]);
         }
         System.out.println();
         System.out.println("Average of each column:");
         for (int i = 0; i < col; i++){
            // System.out.print(colSum[i]);
-           System.out.print(String.format("%.2f",colSum[i]));
-            if (i != col -1)
-                System.out.print(" ");
+           System.out.printf("%.2f ",colSum[i]);
         }
     }
 }
