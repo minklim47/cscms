@@ -1,7 +1,8 @@
 package cscms66;
 
 import java.util.ArrayList;
-import java.util.ArrayList;
+
+//========== NOT DONE ===============
 class StockOwner{
     //write your code here
     private String name;
@@ -60,17 +61,14 @@ class Stock{
     //write your code here
     public ArrayList<Car> cars = new ArrayList<Car>();
 
-
-
     public void buy(Car car){
         cars.add(car);
     }
     public void printAllCar(){
-        for (Car car : cars){
-            System.out.println("Car Name : " +car.getName());
-            System.out.println("Car Brand : " +car.getBrand());
-            System.out.println("Car Price : " +car.getPrice());
-        }
+            for(Car car: cars){
+                System.out.println("Car Name : "+car.getName()+"\nCar Brand : "+car.getBrand()+"\nCar Price : "+car.getPrice());
+            }
+
     }
     public int getStockPrice(){
         int sum = 0;
